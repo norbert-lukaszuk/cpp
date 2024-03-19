@@ -1,9 +1,18 @@
 #include "my_classes.h"
+#include <iostream>
 
-DHT::DHT(uint8_t pin, uint8_t type, uint8_t count)
+void DHT::begin(int time)
 {
+    std::cout << time * 60;
+    std::cout << std::endl;
 }
-int DHT::begin(uint8_t time)
+void DHT::hello(void)
 {
-    return time * 60;
+    std::cout << "Hello world";
+    std::cout << std::endl;
+}
+void DHT::add(int num)
+{
+    value += num;
+    std::cout << "Current value: " << value << std::endl;
 }

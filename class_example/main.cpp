@@ -1,10 +1,15 @@
 #include "my_classes.h"
-DHT dht(2, 25);
+#include <iostream>
 int main()
 {
-    int num_1;
-
-    num_1 = dht.begin(125);
+    DHT dht;
+    DHT dht2;
+    dht.begin(125);
+    dht.hello();
+    dht.add(12);
+    dht.add(23);
+    dht2.add(3);
+    dht2.add(589);
 
     return 0;
 }

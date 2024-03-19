@@ -3,8 +3,12 @@
 #define MY_CLASSES
 class DHT
 {
+private:
+    int value = 0;
+
 public:
-    DHT(uint8_t pin, uint8_t type, uint8_t count = 0);
-    int begin(uint8_t time);
+    void begin(int time);
+    void hello(void);
+    void add(int num);
 };
 #endif
